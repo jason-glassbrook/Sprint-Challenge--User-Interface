@@ -250,10 +250,16 @@ header {
 
 .about-page .middle-content {
   width: 370px;
+  padding: 10px 0;
 }
 
-.about-page .middle-content {
-  padding: 10px 0;
+.middle-wrapper .silly-spacer {
+  margin: 15px 0;
+  border: none;
+  height: 0;
+  width: 100%;
+
+  visibility: none;
 }
 
 /*------------------
