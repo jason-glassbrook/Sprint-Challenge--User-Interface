@@ -61,13 +61,59 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-size: 18px;
+  margin-top: 10px;
   margin-bottom: 15px;
+
+  font-size: 18px;
   font-family: 'Rubik', sans-serif;
 }
 
+h1:first-child ,
+h2:first-child ,
+h3:first-child ,
+h4:first-child ,
+h5:first-child {
+  margin-top: 0;
+}
+
+h1:last-child ,
+h2:last-child ,
+h3:last-child ,
+h4:last-child ,
+h5:last-child {
+  margin-bottom: 0;
+}
+
 p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
   line-height: 1.4;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a.button {
+  display: inline-block;
+
+  margin: 10px 0;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px 22.5px;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+a.button:hover {
+  text-decoration: underline;
 }
 
 /*--------------------------------------
@@ -133,6 +179,10 @@ header {
   margin: 0 auto;
 }
 
+/*------------------
+  top
+------------------*/
+
 .top-content {
   display: flex;
   flex-wrap: wrap;
@@ -157,23 +207,46 @@ header {
   padding-left: 20px;
 }
 
+/*------------------
+  middle
+------------------*/
+
+.middle-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.middle-wrapper .silly-spacer {
+  margin: 15px 0;
+  border: none;
+  height: 1px;
+  width: 100%;
+
+  visibility: none;
+}
+
 .middle-content {
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
 }
 
-.middle-content h2 {
+.middle-content a.button {
+  border-color: Black;
+}
+
+.home-page .middle-content h2 {
   padding: 0 2%;
   margin-bottom: 0;
 }
 
-.middle-content .boxes {
+.home-page .middle-content .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.home-page .middle-content .boxes .box {
   width: 12.5%;
   height: 100px;
   background: black;
@@ -184,22 +257,36 @@ header {
   justify-content: center;
 }
 
+.about-page .middle-content {
+  width: 370px;
+  padding: 10px 0;
+}
+
+/*------------------
+  bottom
+------------------*/
+
 .bottom-content {
   display: flex;
-  margin: 0 2% 20px;
+  margin-bottom: 20px;
   justify-content: space-around;
 }
 
+.home-page .bottom-content {
+  padding: 0 2%;
+}
+
 .about-page .bottom-content {
-  padding: 20px 0;
+  margin-top: 10px;
+  padding: 20px;
 }
 
 .bottom-content .text-container {
-  padding-right: 4%;
+  margin-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 /*--------------------------------------
