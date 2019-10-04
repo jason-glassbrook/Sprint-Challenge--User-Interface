@@ -170,18 +170,18 @@ header {
   border-bottom: 1px dashed black;
 }
 
-.middle-content h2 {
+.home-page .middle-content h2 {
   padding: 0 2%;
   margin-bottom: 0;
 }
 
-.middle-content .boxes {
+.home-page .middle-content .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.home-page .middle-content .boxes .box {
   width: 12.5%;
   height: 100px;
   background: black;
