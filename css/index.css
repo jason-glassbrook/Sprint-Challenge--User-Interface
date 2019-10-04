@@ -192,6 +192,20 @@ header {
   justify-content: center;
 }
 
+.about-page .middle-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.about-page .middle-content {
+  width: 370px;
+}
+
+.about-page .middle-content {
+  padding: 10px 0;
+}
+
 /*------------------
   bottom
 ------------------*/
